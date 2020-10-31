@@ -1,0 +1,23 @@
+
+
+// Variables 
+
+$website-width:1280px;
+$main-color: #00aeff  ;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../img/prince-akachi-yKo8b0lLOQ4-unsplash.jpg"); 
+
+//  backup #ffbc00 yellow #00aeff blue
+// Set Text Color (my opinion: i think this shit  is not that serious
+
+
+@function set-text-color ($color) {
+
+    @if (lightness($color) > 50) {
+        @return #000
+    } @else {
+        @return  #fff
+    }
+}
